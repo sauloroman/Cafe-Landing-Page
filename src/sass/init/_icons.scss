@@ -1,0 +1,35 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.section__icons {
+
+  margin-top: 5rem;
+
+  @include m.tabletSize {
+    margin-top: 10rem;
+  }
+
+  .list-icons {
+    
+    @include m.tabletSize { 
+      @include m.grid(3, 2rem);
+    }
+
+    &__item {
+
+      margin-bottom: 5rem;
+
+      img {
+        margin: 0 auto;
+        width: 12rem;
+      }
+
+      p {
+        font-family: v.$cursive-font;
+        font-size: 3.2rem;
+        color: v.$color-primary;
+      }
+    }
+
+  }
+}

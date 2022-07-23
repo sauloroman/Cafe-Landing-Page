@@ -1,0 +1,30 @@
+{
+  "name": "cafeteria",
+  "version": "1.0.0",
+  "description": "Una deliciosa cafetería lista para entregar las mejores recetas al cliente.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Saulo Román Santillán Nava",
+  "license": "ISC",
+  "devDependencies": {
+    "cssnano": "^5.1.12",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-avif": "^1.1.1",
+    "gulp-imagemin": "^7.0.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-webp": "^4.0.1",
+    "sass": "^1.52.3"
+  },
+  "browserslist": [
+    "last 5 versions",
+    ">1%"
+  ],
+  "dependencies": {
+    "sharp": "^0.30.7"
+  }
+}
