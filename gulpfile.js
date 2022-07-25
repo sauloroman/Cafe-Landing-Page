@@ -9,12 +9,12 @@ const sass = require('gulp-sass')(require('sass'));
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
+const cssnano = require('cssnano');
 
 // IMPORTACIONES PARA IMAGENES
 const imagesmin = require('gulp-imagemin');
 const webp = require('gulp-webp');
 const avif = require('gulp-avif');
-const cssnano = require('cssnano');
 
 // ###########################################
 // TAREAS DE GULP
