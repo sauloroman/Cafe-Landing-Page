@@ -2,7 +2,8 @@
 // IMPORTACIÓN DE FUNCIONES 
 // ###########################################
 
-const {src, dest, watch, series} = require('gulp');
+const {src, dest, watch, series } = require('gulp');
+const build = require('gulp-build');
 
 // IMPORTACIONES DE CSS
 const sass = require('gulp-sass')(require('sass'));
@@ -54,6 +55,12 @@ const imagesAvif = () => {
     .pipe( dest('./build/img') );
 }
 
+const buildApp = () => {
+  return src('./src/sass/**/*.scss')
+    .pipe( build({ GA_ID: '123456' }))
+    .pipe( dest('dist') )
+}
+
 // ###########################################
 // EXPORTAR TAREAS GULP
 // ###########################################
@@ -63,5 +70,6 @@ exports.attention = attention;
 exports.images = images;
 exports.imagesWebp = imagesWebp;
 exports.imagesAvif = imagesAvif;
+exports.buildApp = buildApp;
 
 exports.default = series( compile, attention );

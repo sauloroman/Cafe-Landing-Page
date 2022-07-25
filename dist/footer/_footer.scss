@@ -1,0 +1,45 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.footer {
+  background-color: v.$color-primary;
+
+  &__container {
+    padding: 5rem;
+
+    @include m.tabletSize {
+      @include m.grid(3, 3rem);
+    }
+
+  }
+
+  &__box {
+
+    font-family: v.$cursive-font;
+    text-align: center;
+    margin-bottom: v.$general-gap;
+
+    @include m.tabletSize {
+      margin-bottom: 0;
+    }
+
+    h3 {
+      font-family: inherit;
+      margin: 0 0 1rem 0;
+      font-size: 2.4rem;
+      color: v.$color-secondary;
+    }
+
+    p, a {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+  }
+
+  &__copy {
+    text-align: center;
+    color: v.$color-white;
+    padding: 2rem;
+  }
+}

@@ -13,6 +13,7 @@
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-avif": "^1.1.1",
+    "gulp-build": "^0.5.3",
     "gulp-imagemin": "^7.0.0",
     "gulp-postcss": "^9.0.1",
     "gulp-sass": "^5.1.0",
