@@ -3,7 +3,6 @@
 // ###########################################
 
 const {src, dest, watch, series } = require('gulp');
-const build = require('gulp-build');
 
 // IMPORTACIONES DE CSS
 const sass = require('gulp-sass')(require('sass'));
@@ -53,12 +52,6 @@ const imagesAvif = () => {
   return src('./src/img/**/*.{png,jpg}')
     .pipe( avif({quality: 50}) )
     .pipe( dest('./build/img') );
-}
-
-const buildApp = () => {
-  return src('./src/sass/**/*.scss')
-    .pipe( build({ GA_ID: '123456' }))
-    .pipe( dest('dist') )
 }
 
 // ###########################################
