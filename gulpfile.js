@@ -63,6 +63,5 @@ exports.attention = attention;
 exports.images = images;
 exports.imagesWebp = imagesWebp;
 exports.imagesAvif = imagesAvif;
-exports.buildApp = buildApp;
 
 exports.default = series( compile, attention );
